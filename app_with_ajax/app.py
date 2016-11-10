@@ -22,8 +22,8 @@ def submit():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    """Recieve the article to be classified from an input form and use the
-    model to classify.
+    """Recieve the article to be classified, use the model to classify, and
+    then return the classification in a response as json. 
     """
     data = str(request.json['article'])
     pred = str(model.predict([data])[0])
