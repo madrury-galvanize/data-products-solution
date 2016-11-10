@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import pickle
 from build_model import TextClassifier
+
 app = Flask(__name__)
 
 
