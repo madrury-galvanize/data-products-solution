@@ -74,5 +74,5 @@ if __name__ == '__main__':
     X, y = get_data("data/articles.csv")
     tc = TextClassifier()
     tc.fit(X, y)
-    with open('static/model.pkl', 'w') as f:
+    with open('data/model.pkl', 'w') as f:
         pickle.dump(tc, f)
